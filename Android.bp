@@ -34,7 +34,9 @@ cc_library_shared {
         "-DUSE_BUFFER_USAGE=1",
     ],
     include_dirs :[
-        "hardware/libhardware/include"
+        "hardware/libhardware/include",
+        "system/memory/libion/include",
+	"system/memory/libion/kernel-headers"
     ],
     srcs: [
         "amlogic/am_gralloc_ext.cpp"

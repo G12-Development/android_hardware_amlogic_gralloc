@@ -16,6 +16,7 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
+ifeq ($(TARGET_BOARD_PLATFORM), amlogic)
 
 # Include platform specific makefiles
 include $(if $(wildcard $(LOCAL_PATH)/Android.$(TARGET_BOARD_PLATFORM).mk), $(LOCAL_PATH)/Android.$(TARGET_BOARD_PLATFORM).mk,)
@@ -228,3 +229,4 @@ include $(BUILD_SHARED_LIBRARY)
 
 # Amlogic usage & flags api.
 include $(LOCAL_PATH)/amlogic/Android.mk
+endif

@@ -415,3 +415,15 @@ int am_gralloc_set_omx_video_type(
     GRALLOC_EMPTY_FUN();
     return GRALLOC1_ERROR_BAD_HANDLE;
 }
+
+int am_gralloc_get_size(
+        const native_handle_t * hnd __unused) {
+    GRALLOC_EMPTY_FUN();
+    return  -1;
+}
+
+int am_gralloc_get_usage(
+        const native_handle_t * hnd __unused) {
+    GRALLOC_EMPTY_FUN();
+    return  -1;
+}

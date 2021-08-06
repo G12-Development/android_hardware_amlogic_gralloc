@@ -97,4 +97,8 @@ For modules to set omx video type.
 */
 int am_gralloc_set_omx_video_type(const native_handle_t * hnd, int video_type);
 
+int am_gralloc_get_size(const native_handle_t * hnd);
+int am_gralloc_get_usage(const native_handle_t * hnd);
+
+
 #endif/*AM_GRALLOC_EXT_H*/
